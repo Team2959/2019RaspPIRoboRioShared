@@ -24,10 +24,10 @@ namespace Rpi2959Shared
 
     enum class ProcessingTargets
     {
-        Cargo = 0x01,
-        PortTape = 0x02,
-        FloorTape = 0x04,
-        Hatch  = 0x08
+        Cargo = 0x01,       // Binary 0001
+        PortTape = 0x02,    // Binary 0010
+        FloorTape = 0x04,   // Binary 0100
+        Hatch  = 0x08       // Binary 1000
     };
 
     constexpr ProcessingTargets operator &(ProcessingTargets a, ProcessingTargets b)
