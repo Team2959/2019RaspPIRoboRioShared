@@ -5,21 +5,23 @@ namespace Rpi2959Shared
          const wpi::StringRef    TableName{ "IATable" };    // The name of the NetworkTables table name to use
     }
 
+    // We have noticed when monitoring table changes that the keys might be clipped at times...
+    // so use short abbreviations...these only need to be separate from each other
     namespace Keys
     {
-        const wpi::StringRef    BackCargoResults{ "BackCargoResults" };
-        const wpi::StringRef    BackFloorTapeResults{ "BackFloorTapeResults" };
-        const wpi::StringRef    BackFrameNumber{ "BackFrameNumber" };
-        const wpi::StringRef    BackHatchResults{ "BackHatchResults" };
-        const wpi::StringRef    BackPortTapeResults{ "BackPortTapeResults" };
-        const wpi::StringRef    BackTargets{ "BackTargets" };
+        const wpi::StringRef    BackCargoResults{ "BCR" };
+        const wpi::StringRef    BackFloorTapeResults{ "BFTR" };
+        const wpi::StringRef    BackFrameNumber{ "BFN" };
+        const wpi::StringRef    BackHatchResults{ "BHR" };
+        const wpi::StringRef    BackPortTapeResults{ "BPTR" };
+        const wpi::StringRef    BackTargets{ "BT" };
 
-        const wpi::StringRef    FrontCargoResults{ "FrontCargoResults" };
-        const wpi::StringRef    FrontFloorTapeResults{ "FrontFloorTapeResults" };
-        const wpi::StringRef    FrontFrameNumber{ "FrontFrameNumber" };
-        const wpi::StringRef    FrontHatchResults{ "FrontHatchResults" };
-        const wpi::StringRef    FrontPortTapeResults{ "FrontPortTapeResults" };
-        const wpi::StringRef    FrontTargets{ "FrontTargets" };
+        const wpi::StringRef    FrontCargoResults{ "FCR" };
+        const wpi::StringRef    FrontFloorTapeResults{ "FFTR" };
+        const wpi::StringRef    FrontFrameNumber{ "FFNr" };
+        const wpi::StringRef    FrontHatchResults{ "FHR" };
+        const wpi::StringRef    FrontPortTapeResults{ "FPTR" };
+        const wpi::StringRef    FrontTargets{ "FT" };
     }
 
     enum class ProcessingTargets
