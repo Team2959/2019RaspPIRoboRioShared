@@ -1,3 +1,11 @@
+//*****************************************************************************
+//*                                                                           *
+//* Shared.hpp - Shared declarations between Raspberry PI & RoboRio.          *
+//*                                                                           *
+//*****************************************************************************
+
+#pragma once
+
 namespace Rpi2959Shared
 {
     namespace Tables
